@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15702" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15704"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="263" id="KGk-i7-Jjw" customClass="MovieRow" customModule="HBO_GO" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="398" height="263"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="398" height="263"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="YjL-xl-AiJ" userLabel="BackgroundView">
+                        <rect key="frame" x="0.0" y="0.0" width="398" height="263"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ob2-1h-e4Y">
+                                <rect key="frame" x="8" y="129" width="382" height="130"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="placeholder" translatesAutoresizingMaskIntoConstraints="NO" id="3uc-Bu-nrv">
+                                        <rect key="frame" x="8" y="-50" width="123" height="164"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" secondItem="3uc-Bu-nrv" secondAttribute="height" multiplier="3:4" id="T0x-wj-Xib"/>
+                                        </constraints>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                <integer key="value" value="5"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </imageView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="sbF-1s-3LU">
+                                        <rect key="frame" x="139" y="8" width="235" height="106"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Movie Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5iS-MR-FRh">
+                                                <rect key="frame" x="0.0" y="0.0" width="235" height="26.5"/>
+                                                <fontDescription key="fontDescription" name="Kefa-Regular" family="Kefa" pointSize="20"/>
+                                                <color key="textColor" name="SecondaryColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="popularity" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="d4Z-3l-H3m">
+                                                <rect key="frame" x="0.0" y="26.5" width="235" height="26.5"/>
+                                                <fontDescription key="fontDescription" name="Kefa-Regular" family="Kefa" pointSize="14"/>
+                                                <color key="textColor" name="SecondaryColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="rating" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sAD-J8-vXc">
+                                                <rect key="frame" x="0.0" y="53" width="235" height="26.5"/>
+                                                <fontDescription key="fontDescription" name="Kefa-Regular" family="Kefa" pointSize="14"/>
+                                                <color key="textColor" name="SecondaryColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="release date" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Rfg-3f-Lcf">
+                                                <rect key="frame" x="0.0" y="79.5" width="235" height="26.5"/>
+                                                <fontDescription key="fontDescription" name="Kefa-Regular" family="Kefa" pointSize="14"/>
+                                                <color key="textColor" name="SecondaryColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                                <color key="backgroundColor" name="PrimaryColorAplha"/>
+                                <constraints>
+                                    <constraint firstItem="sbF-1s-3LU" firstAttribute="top" secondItem="ob2-1h-e4Y" secondAttribute="top" constant="8" id="195-uo-BE2"/>
+                                    <constraint firstAttribute="trailing" secondItem="sbF-1s-3LU" secondAttribute="trailing" constant="8" id="1hU-T6-x9z"/>
+                                    <constraint firstItem="3uc-Bu-nrv" firstAttribute="leading" secondItem="ob2-1h-e4Y" secondAttribute="leading" constant="8" id="By0-Lu-YTC"/>
+                                    <constraint firstAttribute="bottom" secondItem="3uc-Bu-nrv" secondAttribute="bottom" constant="16" id="Msb-Xb-Z9G"/>
+                                    <constraint firstItem="3uc-Bu-nrv" firstAttribute="top" secondItem="ob2-1h-e4Y" secondAttribute="top" constant="-50" id="OAp-12-9Sf"/>
+                                    <constraint firstItem="sbF-1s-3LU" firstAttribute="leading" secondItem="3uc-Bu-nrv" secondAttribute="trailing" constant="8" id="OaA-3I-chl"/>
+                                    <constraint firstItem="sbF-1s-3LU" firstAttribute="bottom" secondItem="3uc-Bu-nrv" secondAttribute="bottom" id="WR7-Ys-7qm"/>
+                                    <constraint firstAttribute="height" constant="130" id="kRd-tF-1u4"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="8"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" name="SecondaryColor"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="ob2-1h-e4Y" secondAttribute="trailing" constant="8" id="GLS-zL-M7D"/>
+                            <constraint firstItem="ob2-1h-e4Y" firstAttribute="leading" secondItem="YjL-xl-AiJ" secondAttribute="leading" constant="8" id="im2-6t-Qll"/>
+                            <constraint firstAttribute="bottom" secondItem="ob2-1h-e4Y" secondAttribute="bottom" constant="4" id="uGY-lO-nWo"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="bottom" secondItem="YjL-xl-AiJ" secondAttribute="bottom" id="9lU-ka-tEl"/>
+                    <constraint firstItem="YjL-xl-AiJ" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="l4D-3e-Mbe"/>
+                    <constraint firstItem="YjL-xl-AiJ" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="xyp-7q-Mx1"/>
+                    <constraint firstAttribute="trailing" secondItem="YjL-xl-AiJ" secondAttribute="trailing" id="zht-2h-yhX"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="ivMovie" destination="3uc-Bu-nrv" id="PeD-Qz-ytB"/>
+                <outlet property="lbMovieName" destination="5iS-MR-FRh" id="9pm-cE-Qln"/>
+                <outlet property="lbPopularity" destination="d4Z-3l-H3m" id="0Lw-2f-e0I"/>
+                <outlet property="lbRating" destination="sAD-J8-vXc" id="8yF-uH-XEX"/>
+                <outlet property="lbReleaseDate" destination="Rfg-3f-Lcf" id="uRh-mH-xJD"/>
+            </connections>
+            <point key="canvasLocation" x="194.20289855072465" y="130.24553571428572"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="placeholder" width="300" height="450"/>
+        <namedColor name="PrimaryColorAplha">
+            <color red="0.92900002002716064" green="0.63899999856948853" blue="0.3449999988079071" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="SecondaryColor">
+            <color red="0.071000002324581146" green="0.090000003576278687" blue="0.12200000137090683" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+        </namedColor>
+    </resources>
+</document>
